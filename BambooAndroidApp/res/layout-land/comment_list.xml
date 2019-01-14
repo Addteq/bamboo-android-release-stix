@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/washed" >
+
+     <TextView
+        android:id="@+id/commentNumTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:padding="5dp"
+        android:text="@string/no_comment"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/commentLV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/commentNumTV" 
+        android:layout_above="@+id/form"/>
+
+     <LinearLayout
+        android:id="@+id/form"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal"
+        android:layout_margin="3dp" >
+    <EditText
+        android:id="@+id/commentET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.82"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:lines="1" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_weight="0.18"
+        android:background="@drawable/roundedshape"
+        android:text="@string/send"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/black" />
+	</LinearLayout>
+</RelativeLayout>

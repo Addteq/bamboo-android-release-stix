@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/jconnect.droid.style.main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:isScrollContainer="true"
+    android:orientation="vertical"
+    android:weightSum="100" >
+
+    <ListView
+        android:id="@id/android:list"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="97.5"
+        android:divider="@null"
+        android:dividerHeight="0px" />
+
+    <LinearLayout
+        style="@style/jconnect.droid.style.input_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:layout_weight="2.5"
+        android:weightSum="100" >
+
+        <EditText
+            android:id="@+id/jconnect.droid.viewfeedback.reply_text"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="75"
+            android:hint="@string/jconnect.droid.reply_placeholder"
+            android:textColor="@android:color/white"
+            android:minLines="1" />
+
+        <Button
+            android:id="@+id/jconnect.droid.viewfeedback.reply_button"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:text="@string/jconnect.droid.send" />
+    </LinearLayout>
+
+</LinearLayout>

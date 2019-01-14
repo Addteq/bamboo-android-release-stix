@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/current"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/bamboo_server"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/newIP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/current"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/newip"
+        android:inputType="textWebEmailAddress" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/newPort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newIP"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/newport"
+        android:inputType="numberSigned" >
+    </EditText>
+
+    <Button
+        android:id="@+id/change"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radiogroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/pretty_button"
+        android:text="@string/ok"
+        android:textColor="@android:color/white" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_below="@id/newPort">
+
+        <RadioButton
+            android:id="@+id/http"
+            android:paddingRight="20dp"
+            android:text="@string/http" />
+
+        <RadioButton
+            android:id="@+id/https"
+            android:text="@string/https" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/hosterror"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/newPort"
+        android:layout_toRightOf="@+id/newIP"
+        android:src="@drawable/failure"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/porterror"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/change"
+        android:layout_toRightOf="@+id/newPort"
+        android:src="@drawable/failure"
+        android:visibility="invisible" />
+
+</RelativeLayout>
+</ScrollView>

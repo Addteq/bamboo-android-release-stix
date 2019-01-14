@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="NewApi">
+        <ignore path="src/com/addteq/bamboo/BuildListActivity.java" />
+        <ignore path="src/com/addteq/bamboo/BuildListFragment.java" />
+    </issue>
+    <issue id="ParserError" severity="ignore" />
+</lint>

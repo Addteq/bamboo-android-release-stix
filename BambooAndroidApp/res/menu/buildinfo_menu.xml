@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/stages_menu"
+        android:icon="@drawable/ic_action_stages"
+        android:orderInCategory="1"
+        android:showAsAction="ifRoom"
+        android:title="Stages"/>
+   
+    <item
+        android:id="@+id/share_menu"
+        android:icon="@drawable/ic_action_share"
+        android:orderInCategory="4"
+        android:showAsAction="ifRoom"
+        
+        android:title="Share"/>
+
+    <item
+        android:id="@+id/startbuild_menu"
+        android:icon="@drawable/ic_action_build"
+        android:orderInCategory="2"
+        android:showAsAction="ifRoom"
+        android:title="Build"/>
+    
+   <item
+        android:id="@+id/help_menu"
+        android:icon="@drawable/help"
+        android:orderInCategory="3"
+        android:showAsAction="ifRoom"
+        android:title="Help"/>  
+
+</menu>

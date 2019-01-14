@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    style="@style/jconnect.droid.style.main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+	 <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+		<EditText
+                android:id="@+id/feedback_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="top"
+                android:hint="@string/jconnect.droid.feedback_placeholder"
+                android:inputType="textMultiLine"
+                android:textColor="@android:color/black" >
+			<requestFocus />
+        </EditText>
+                
+     </ScrollView>
+            
+
+     <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentRight="true" >
+
+         <Button
+             android:id="@+id/btAudio"
+             android:layout_width="35dp"
+             android:layout_height="35dp"
+             android:layout_margin="10dp"
+             android:background="@drawable/jconnect_droid_ic_audio" />
+
+         <Button
+             android:id="@+id/btGallery"
+             android:layout_width="35dp"
+             android:layout_height="35dp"
+             android:layout_margin="10dp"
+             android:background="@drawable/jconnect_droid_ic_gallery" />
+     </LinearLayout>
+
+           
+
+</RelativeLayout>

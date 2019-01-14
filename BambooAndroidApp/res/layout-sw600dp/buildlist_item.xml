@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/buildstatus"
+        android:layout_width="30dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/buildTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/buildstatus"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@+id/buildstatus"
+        android:text="Build Number"
+        android:textSize="28dp" />
+
+    <TextView
+        android:id="@+id/buildreason"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buildstatus"
+        android:layout_alignLeft="@+id/buildTitle"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/buildTitle"
+        android:text="Reason"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/buildtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buildTitle"
+        android:layout_alignBottom="@+id/buildTitle"
+        android:layout_marginLeft="18dp"
+        android:layout_toRightOf="@+id/buildTitle"
+        android:text="TimeStamp"
+        android:textSize="18dp" />
+
+</RelativeLayout>

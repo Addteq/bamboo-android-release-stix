@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:id="@+id/feedback_inbox" 
+    android:icon="@drawable/morebug" 
+    android:orderInCategory="1" android:showAsAction="ifRoom" 
+    android:title="Feedback Inbox" />
+    
+    <item
+        android:id="@+id/jconnect.droid.send"
+        android:title="Send" 
+        android:showAsAction="ifRoom" 
+        android:orderInCategory="2"/>
+    
+    
+          
+<!-- 	<item -->
+<!--         android:id="@+id/jconnect.droid.attach" -->
+<!--         android:icon="@drawable/jconnect_droid_ic_menu_attachment" -->
+<!--         android:title="@string/jconnect.droid.attach"> -->
+<!--         <menu> -->
+
+<!--             <item android:id="@+id/jconnect.droid.attach_image" -->
+<!--             android:icon="@drawable/jconnect_droid_ic_gallery" -->
+<!--             android:title="@string/jconnect.droid.image" /> -->
+<!--             <item android:id="@+id/jconnect.droid.attach_audio" -->
+<!--             android:icon="@drawable/jconnect_droid_ic_audio" -->
+<!--             android:title="@string/jconnect.droid.audio" /> -->
+
+<!--         </menu> -->
+<!--     </item> -->
+
+</menu>

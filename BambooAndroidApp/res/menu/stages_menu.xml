@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/log_menu"
+        android:icon="@drawable/ic_action_log"
+        android:orderInCategory="1"
+        android:showAsAction="ifRoom"
+        android:title="Log File"/>
+    <item
+        android:id="@+id/help_menu"
+        android:icon="@drawable/help"
+        android:orderInCategory="3"
+        android:showAsAction="ifRoom"
+        android:title="Help"/>
+    
+
+</menu>

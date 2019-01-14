@@ -1,0 +1,33 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion "23.0.3"
+
+    // Migrated configuration from the manifest
+    defaultConfig {
+        minSdkVersion 7
+        targetSdkVersion 15
+        versionCode 90
+        versionName "4.1.0"
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDir 'src'
+            res.srcDir 'res'
+        }
+    }
+	packagingOptions { 
+		exclude 'META-INF/LICENSE.txt' 
+		exclude 'META-INF/NOTICE.txt'
+		exclude 'META-INF/DEPENDENCIES'
+	}
+}
+
+dependencies {
+	//compile fileTree(dir: 'libs', include: ['*.jar'])
+	compile 'com.android.support:support-v4:19.+'
+    
+}

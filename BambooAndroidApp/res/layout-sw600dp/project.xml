@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+          android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+  <SearchView
+      android:id="@+id/search"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentTop="true"
+      android:layout_alignRight="@+id/feedback"
+      android:focusable="false"
+      android:focusableInTouchMode="false"
+      android:iconifiedByDefault="false"
+      android:imeOptions="actionDone" />
+  
+  <!--    <TextView 
+        android:id="@+id/projectName"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="35dp"
+        android:background="#07000000"
+        
+        android:gravity="center_vertical"
+        android:layout_below="@+id/search"
+        android:textStyle="bold"
+        android:text="Addteq Confluence Table Plugin"/>
+
+   <ExpandableListView
+       android:id="@+id/project_list"
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:layout_below="@+id/search"
+       android:layout_marginTop="40dp"
+       android:layout_toLeftOf="@+id/sideIndex"
+       android:focusable="true"
+       android:descendantFocusability="afterDescendants"
+       android:groupIndicator="@null"
+       android:orientation="vertical" >
+    
+     </ExpandableListView>    --> 
+     
+   
+   
+   
+    <TextView 
+        android:id="@+id/projectName"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingLeft="35dp"
+        android:alpha="1"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/search"
+        android:textStyle="bold"
+        android:text=""
+        android:background="@drawable/textvie_shadow" 
+
+        />
+
+  <!-- android:layout_toLeftOf="@+id/sideIndex" -->
+   <ExpandableListView
+       android:id="@+id/project_list"
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:layout_below="@+id/projectName"
+       
+       android:focusable="true"
+       android:descendantFocusability="afterDescendants"
+       android:groupIndicator="@null"
+       android:fadingEdgeLength="100dp"
+       android:orientation="vertical"
+       android:fadingEdge="vertical"
+       android:overScrollMode="never"
+       android:requiresFadingEdge="vertical"
+       android:cacheColorHint="#323232">
+    
+   </ExpandableListView>
+
+   <!-- <ListView
+        android:id="@+id/projectLV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="9dp"
+        android:background="@color/white" >
+    </ListView>
+    -->
+    <ImageView
+        android:id="@+id/feedback"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/bugblack"
+        android:layout_margin="10dp"/>
+    
+</RelativeLayout>

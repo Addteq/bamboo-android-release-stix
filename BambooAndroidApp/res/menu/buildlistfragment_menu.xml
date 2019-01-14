@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/graph_menu"
+        android:icon="@drawable/ic_action_graph"
+        android:orderInCategory="2"
+        android:showAsAction="ifRoom"
+        android:title="Graph"/>
+    <item
+        android:id="@+id/startbuild_menu"
+        android:icon="@drawable/ic_action_build"
+        android:orderInCategory="3"
+        android:showAsAction="ifRoom"
+        android:title="Build"/>
+
+</menu>

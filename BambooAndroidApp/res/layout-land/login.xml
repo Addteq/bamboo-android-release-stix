@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+   android:layout_height="fill_parent" 
+   android:background="@drawable/background_land"
+   android:gravity="center"
+    android:orientation="vertical">
+
+<ScrollView 
+    android:id="@+id/main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+       
+        <LinearLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/companylogo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="84dp"
+                    android:contentDescription="companyLogo"
+                    android:src="@drawable/logo" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/idEditText"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:ems="10"
+                android:hint="Username"
+                android:inputType="textNoSuggestions"
+                android:padding="5dp" />
+
+            <Button
+                android:id="@+id/id_clear_button"
+                android:layout_width="31dp"
+                android:layout_height="31dp"
+                android:layout_gravity="right|center_vertical"
+                android:background="@drawable/text_field_clear_btn" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:background="@color/white"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="5dp" />
+
+            <Button
+                android:id="@+id/pw_clear_button"
+                android:layout_width="31dp"
+                android:layout_height="31dp"
+                android:layout_gravity="right|center_vertical"
+                android:background="@drawable/text_field_clear_btn" />
+        </FrameLayout>
+
+				 <CheckBox
+				     android:id="@+id/rememberMeCheckBox"
+				     android:layout_width="270dp"
+				     android:layout_height="wrap_content"
+				     android:layout_marginRight="14dp"
+				     android:button="@drawable/checkbox"
+				     android:text="@string/rememberMe"
+				     android:textAppearance="?android:attr/textAppearanceSmall"
+				     android:textColor="@color/white"
+				     android:textColorHint="@color/white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingTop="10dp" >
+
+                <Button
+                android:id="@+id/loginButton"
+                android:layout_width="150dp"
+                android:layout_height="34dp"
+                android:layout_marginRight="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:text="@string/login"
+                android:textColor="@android:color/black"
+                android:textSize="11dp" />
+
+          <!--   <Button
+                android:id="@+id/guestLoginButton"
+                android:layout_width="150dp"
+                android:layout_height="34dp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:text="@string/guestLogin"
+                android:textColor="@android:color/black"
+                android:textSize="11dp" /> -->
+            </LinearLayout>
+        </LinearLayout>
+</ScrollView>
+<!--<ImageView
+        android:id="@+id/ivBug"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/bug" />-->
+
+    <ImageView
+        android:id="@+id/ivInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/info" />
+
+    <ImageView
+        android:id="@+id/ivCog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:layout_marginLeft="18dp"
+        android:layout_toRightOf="@+id/ivInfo"
+        android:src="@drawable/cog" />
+
+
+
+</RelativeLayout>

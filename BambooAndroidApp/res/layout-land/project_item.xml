@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="7dp" >
+
+    <TextView
+        android:id="@+id/project_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false"
+        android:weightSum="1.0" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="0.5" >
+
+            <ImageView
+                android:id="@+id/success"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:contentDescription="@string/success"
+                android:paddingRight="7dp"
+                android:src="@drawable/success_green" />
+
+            <TextView
+                android:id="@+id/success_no_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="7dp"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/successful_plans_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/successful_plans"
+                android:textSize="12dp" />
+        </LinearLayout>
+<LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="0.5" >
+        <ImageView
+            android:id="@+id/failure"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:contentDescription="@string/failure"
+            android:paddingRight="7dp"
+            android:src="@drawable/failure_red" />
+
+        <TextView
+            android:id="@+id/failure_no_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="7dp"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/failed_plans_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/failed_plans"
+            android:textSize="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

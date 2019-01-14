@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+
+    <string name="app_name">Stix</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main"></string>
+    <string name="status">status</string>
+    <string name="success">success</string>
+    <string name="successful_plans">successful plans</string>
+    <string name="failure">failure</string>
+    <string name="failed_plans">failed plans</string>
+    <string name="successCheck">Success</string>
+    <string name="trigger">Trigger:</string>
+    <string name="revision">Revision:</string>
+    <string name="complete">Completed:</string>
+    <string name="duration">Duration:</string>
+    <string name="successSince">Relative Time:</string>
+    <string name="id">Username:</string>
+    <string name="password">Password:</string>
+    <string name="rememberMe">Remember Me:</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="plan">Plan</string>
+    <string name="comment">Comment:</string>
+    <string name="show_comment">Show Comment</string>
+    <string name="hash">#</string>
+    <string name="artifact_name">Artifacts Created:</string>
+    <string name="artifact">artifact</string>
+    <string name="add_comment">Add Comment</string>
+    <string name="newip">myhost.com</string>
+    <string name="newport">8085(optional)</string>
+    <string name="ok">OK</string>
+    <string name="changes">Changeset:</string>
+    <string name="send">Send</string>
+    <string name="bamboo_server">Bamboo IP Address:</string>
+    <string name="no_comment">No comments</string>
+    <string name="refresh">Refresh List</string>
+    <string name="no_stages">No Stages</string>
+    <string name="build_all">Build All</string>
+    <string name="build">Build</string>
+    <string name="stage_name">Stage Name</string>
+    <string name="change_comments">Commit Messages:</string>
+    <string name="changed_files">Changed Files:</string>
+    <string name="commit_message">Commit Message</string>
+    <string name="commit_author">Commit Author</string>
+    <string name="http">http://</string>
+    <string name="https">https://</string>
+    <string name="crash_notification.title">Stix Crashed</string>
+    <string name="crash_notification.text">Click to send a crash report.</string>
+    <string name="crash_notification.dialog_text">Stix has crashed. Please click okay to send back the data to the developers. (You are awesome btw; just putting it out there.)</string>
+    <string name="crash_notification.dialog_request_user_email">Your email address:</string>
+    <string name="guestLogin">Guest?</string>
+    <string name="des">Description</string>
+    <string name="txtContent">Text</string>
+
+</resources>
